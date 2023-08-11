@@ -17,4 +17,10 @@ for i = 1, 8 do
 	-- })
 end
 
+table.insert(config.keys, {
+	key = "w",
+	mods = "CMD",
+	action = wezterm.action.CloseCurrentTab({ confirm = true }),
+})
+
 return config
