@@ -149,7 +149,7 @@ function M.enable()
 			"#f7768e",
 			"#9ece6a",
 			"#7dcfff",
-			"#bb9a11",
+			"#C0CBF5",
 			"#e0af68",
 			"#7aa2f7",
 		}
