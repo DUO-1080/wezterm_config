@@ -1,6 +1,7 @@
 local utils = require("utils")
 
 require("status").enable()
+require("startup")
 
 local modules = utils.map({
 	"window",
