@@ -2,23 +2,8 @@ local wezterm = require("wezterm")
 
 local sync_with_system = false
 
-local dark_theme = ({
-   "astromouse (terminal.sexy)", -- [1],
-   "Catppuccin Frappe", -- [2]
-   "rose-pine", -- [3], not working yet
-   "Rosé Pine (base16)", -- [4]
-   "WildCherry", -- [5]
-   "nord", -- [6]
-   "Builtin Pastel Dark", -- [7]
-   "Brogrammer (base16)", -- [8]
-   "City Streets (terminal.sexy)", -- [9]
-   "Catppuccin Mocha", -- [10]
-   "Everforest Light (Gogh)", -- [11]
-})[6]
-
-local light_theme = ({
-   "Catppuccin Latte", -- [1]
-})[1]
+local dark_theme = "Eighties (dark) (terminal.sexy)"
+local light_theme = "Everforest Light (Gogh)"
 
 local function scheme_for_appearance(appearance)
    if appearance:find("Dark") then

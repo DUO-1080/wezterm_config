@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 
-local font_size = 16
+local font_size = 15.6
 local bold = false
 local font_family = ({
 	"JetBrainsMono Nerd Font", -- [2]
