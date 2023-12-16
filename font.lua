@@ -3,8 +3,10 @@ local wezterm = require("wezterm")
 local font_size = 15.6
 local bold = false
 local font_family = ({
-	"JetBrainsMono Nerd Font", -- [2]
-	"FiraCode Nerd Font Mono", -- [3]
+	-- "JetBrainsMono NFM Medium", -- [2]
+	-- "JetBrainsMono Nerd Font", -- [2]
+	-- "FiraCode Nerd Font Mono", -- [3]
+	"JetBrains Mono",
 })[1]
 
 local options = {}
