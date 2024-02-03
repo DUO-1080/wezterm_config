@@ -1,30 +1,15 @@
 local wezterm = require("wezterm")
 
-local sync_with_system = false
+local elighties_theme = wezterm.color.get_builtin_schemes()["Eighties (dark) (terminal.sexy)"]
+local ever_forest_theme = wezterm.color.get_builtin_schemes()["Everforest Dark (Gogh)"]
 
-local dark_theme = "Eighties (dark) (terminal.sexy)"
-local light_theme = "Everforest Light (Gogh)"
-
-local function scheme_for_appearance(appearance)
-   if appearance:find("Dark") then
-      return dark_theme
-   end
-
-   return light_theme
-end
-
-if sync_with_system then
-   wezterm.on("window-config-reloaded", function(window)
-      local overrides = window:get_config_overrides() or {}
-      local appearance = window:get_appearance()
-      local scheme = scheme_for_appearance(appearance)
-      if overrides.color_scheme ~= scheme then
-         overrides.color_scheme = scheme
-         window:set_config_overrides(overrides)
-      end
-   end)
-end
+ever_forest_theme.cursor_bg = elighties_theme.cursor_bg
+ever_forest_theme.cursor_fg = elighties_theme.cursor_fg
 
 return {
-   color_scheme = dark_theme,
+	color_schemes = {
+		["alighties"] = elighties_theme,
+		["ever_forest"] = ever_forest_theme,
+	},
+	color_scheme = "ever_forest",
 }
