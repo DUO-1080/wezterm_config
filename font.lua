@@ -21,5 +21,5 @@ local font = wezterm.font(font_family, options)
 return {
 	font = font,
 	font_size = font_size,
-	line_height = 1.06,
+	line_height = 1.03,
 }
